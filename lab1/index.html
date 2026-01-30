@@ -3,50 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
     <title>Lab 1: Team Portfolio</title>
+    <style>
+        .row{
+            display:flex;
+            justify-content: center;
+        }
+        .imageFigure{
+            text-align: center;
+        }
+        .personImg{
+            width: 100%;
+            height:auto;
+            border-radius: 10%;
+            border: 2px solid black;
+            
+        }
+        #justinimg{
+            width:75%;
+            height:auto;
+        }
+        h1{
+            justify-content: center;
+            display: flex;
+            color:blue;
+            font-family: "Saira", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            font-variation-settings:
+            "wdth" 100;
+        }
+        nav{
+            justify-content: center;
+            display: flex;
+        }
+        .navlink{
+            margin: 0 20px;
+            border: 2px solid black;
+            background-color:blue;
+            color:white;
+        }
+        .content{
+            justify-content: center;
+            display: flex;
+        }
+        #csumblogo{
+            justify-content: center;
+            text-align: center;
+            display: flex;
+        }
+        
+    </style>
+</head>
+
+<body>
     <br>
     <h1>Team One</h1>
     <hr>
 
     <nav>
-    <a href="" target="_blank">Home</a>
-    <a href="about-page.html" target="_blank">About</a>
-    <a href="contact.html" target="_blank">Contact</a>
+    <a class="navlink" href="" target="_blank">Home</a>
+    <a class="navlink" href="about-page.html" target="_blank">About</a>
+    <a class="navlink" href="contact.html" target="_blank">Contact</a>
     </nav>
 
     <br>
+    <div class="row">
+        <figure class="imageFigure">
+            <img class="personImg" id="justinimg" src="img/lab1photo.jpg" alt="image of a thumbs up">
+            <figcaption> Justin Andreoli</figcaption>
+        </figure>
+        <figure class="imageFigure">
+            <img  class="personImg" src="img/WIN_20260122_16_22_26_Pro.jpg"  alt="image of a thumbs up">
+            <figcaption> Oscar Aviles-Saldana</figcaption>
+        </figure>
 
-    <img src = "img/lab1photo.jpg" alt="image of a thumbs up" height="200" width="300">
-    <h2> Justin Andreoli</h2>
-    <img src = "img/WIN_20260122_16_22_26_Pro.jpg" height="200" width="300" alt="image of a thumbs up">
-    <h2> Oscar Aviles-Saldana</h2>
-    <img src = "img/WIN_20260122_16_25_14_Pro.jpg" height="200" width="300" alt="image of a thumbs up">
-    <h2> Valeria Arteaga-Higueros</h2>
-    <img src ="img/WIN_20260122_16_25_21_Pro.jpg" height="200" width="300" alt="image of a thumbs up">
-    <h2> Senen Bagos</h2>
+        <figure class="imageFigure">
+            <img class="personImg"  src="img/WIN_20260122_16_25_14_Pro.jpg"  alt="image of a thumbs up">
+            <figcaption> Valeria Arteaga-Higueros</figcaption>
+        </figure>
+        <figure class="imageFigure">
+            <img class="personImg" src="img/WIN_20260122_16_25_21_Pro.jpg" alt="image of a thumbs up">
+            <figcaption> Senen Bagos</figcaption>
+        </figure>
+        
+    </div>
 
-    <p>Hello! Welcome to our website, we are Team One</p>
+    <p class="content">Hello! Welcome to our website, we are Team One</p>
     <br>
     
-    <p style="font-family:'Times New Roman', Times, serif" > “Computers are incredibly fast, accurate, and stupid. Human beings are incredibly slow, inaccurate, and brilliant. Together they are powerful beyond imagination.”</p>
+    <p class="content" style="font-family:'Times New Roman', Times, serif" > “Computers are incredibly fast, accurate, and stupid. Human beings are incredibly slow, inaccurate, and brilliant. Together they are powerful beyond imagination.”</p>
     
-    <p>-Albert Einstein, physicist</p>
+    <p class="content" >-Albert Einstein, physicist</p>
     <br>
 
     <hr>
 
-    <footer class="site-footer">
-        <p>CST336 Internet Programming. 2026&copy; Andreoli, Aviles-Saldana, Arteaga-Higueros, Bagos 
+    <!-- <footer> -->
+        <p class="content" >CST336 Internet Programming. 2026&copy; Andreoli, Aviles-Saldana, Arteaga-Higueros, Bagos 
         </p>
-        <p>Disclaimer: The informaton in this webpage is fictitous.</p>
-        <p>It is used for academic purposes only.</p>
-
+        <p class="content" >Disclaimer: The informaton in this webpage is fictitous.</p>
+        <p class="content">It is used for academic purposes only.</p>
+        <br>
+    <div class="row">
         <img src="img/CSU-MB-Logo.jpg" alt="csumb logo">
+    </div>
 
-    </footer>
+    <!-- </footer> -->
 
 
 
