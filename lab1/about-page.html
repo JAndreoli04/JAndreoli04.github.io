@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Page</title>
+    <link href="homepage.css" rel="stylesheet">
     <style>
         h1{
             font-family: "Saira", sans-serif;
@@ -20,19 +21,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <br>
-    <h1>Team One</h1>
-    <hr>
-
-    <nav>
-    <a href="index.html" target="_blank">Home</a>
-    <a href="about-page.html" target="_blank">About</a>
-    <a href="contact.html" target="_blank">Contact</a>
+    <div class="title-div">
+        <h1>Team One</h1>
+    </div>
+    <nav class="navigation">
+    <a class="navlink" href="index.html" target="_blank">Home</a>
+    <a class="navlink" href="about-page.html" target="_blank">About</a>
+    <a class="navlink" href="contact.html" target="_blank">Contact</a>
     </nav>
 
     <br>
 
-    <table>
+    <table id="programming-table">
         <tr> 
             <th>Programming Language</th>
             <th>Years Experience</th>
@@ -52,25 +52,25 @@
         <br>
     </table>
 
-    <p>Our Common Hobbies </p>
+    <p class="content">Our Common Hobbies: </p>
     <ul>
-        <li>Video Games: We all play fps games like Call of Duty</li>
-        <li>Progamming: We all like programming projects</li>
-        <li>Music: We all like to listen to all kinds of kinds of music like indie rock</li>
+        <li class="content">Video Games: We all play fps games like Call of Duty</li>
+        <li class="content">Progamming: We all like programming projects</li>
+        <li class="content">Music: We all like to listen to all kinds of kinds of music like indie rock</li>
     </ul>
     <br>
 
-    <hr>
-
-    <footer class="site-footer">
-        <p>CST336 Internet Programming. 2026&copy; Andreoli, Aviles-Saldana, Arteaga-Higueros, Bagos 
+    <div class="footer">
+        <br>
+        <p class="content">CST336 Internet Programming. 2026&copy; Andreoli, Aviles-Saldana, Arteaga-Higueros, Bagos 
         </p>
-        <p>Disclaimer: The informaton in this webpage is fictitous.</p>
-        <p>It is used for academic purposes only.</p>
-
-        <img src="img/CSU-MB-Logo.jpg" alt="csumb logo">
-
-    </footer>
+        <p class="content">Disclaimer: The informaton in this webpage is fictitous. </p>
+        <p class="content"> It is used for academic purposes only.</p>
+        <br>
+        <div class="row">
+            <img src="img/CSU-MB-Logo.jpg" alt="csumb logo">
+        </div>
+    </div>
 
     
 </body>
