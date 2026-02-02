@@ -90,3 +90,7 @@ body{
 .contact-info{
     padding:2em;
 }
+
+.navlink:hover{
+    padding:1em;
+}
