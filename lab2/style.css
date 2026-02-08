@@ -1,0 +1,41 @@
+body
+    {
+        /* background-color: rgb(179, 172, 212);
+         */
+        background-image: url("/Users/justinandreoli/CST336/JAndreoli04.github.io/lab2/img/matrix-background-binary-code-texture-falling-green-numbers-data-vector-id1312850689.webp");
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+}
+
+#userGuesses{
+    background-color: dimgray;
+    color: white;
+    
+}
+#guessButton{
+    background-color: rgb(175, 220, 176);
+    border-radius: 5% solid white;
+    size: 10vw  ;
+    font-size: 2vw;
+
+}
+
+#numberInput{
+    color: blue;
+}
+
+#prevGuess{
+    color: yellow;
+}
+
+h1{
+    color:chartreuse;
+}
+#guess{
+    color: white;
+    font-size: 5vw;
+}
+#hint{
+    font-size: 5vw;;
+
+}

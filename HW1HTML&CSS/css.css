@@ -1,0 +1,201 @@
+body{
+    background-color: #0D0D0D;
+    font-family: "Courier New", Courier, monospace;
+}
+h2{
+    color: #39FF14;
+    justify-content: center;
+}
+
+#malwareDiv{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+.terminal-window {
+    background-color: #1a1a1a;
+    border: 1px solid #333;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    max-width: 600px;
+    margin: 40px auto;
+    overflow: hidden; 
+}
+
+.terminal-header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: start;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 8px;
+}
+
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.terminal-title{
+    color: #bbb;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.navigation {
+    display: flex;
+    margin: 20px 50px;
+    justify-content: flex-end;
+    gap: 2%;
+    color:#39FF14;
+}
+
+.navigation a, 
+.navigation a:visited {
+    color: #39FF14;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.navigation a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 10px #39FF14;
+}
+
+.malwareImgLink{
+    color: #39FF14;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+#title {
+    text-align: center;
+    color: #39FF14;
+}
+
+.malware_img {
+    flex-wrap: wrap;
+    justify-content: auto center;
+}
+
+.figureImage{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.content{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    color:#008F11;
+    max-width: 800px;      
+    margin: 40px auto;    
+    padding: 20px;
+}
+
+#malwareDescription{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0, 15vw;
+    color:#008F11;
+}
+
+details {
+    background-color: rgba(0, 143, 17, 0.05); /* green tint */
+    border: 1px solid #008F11;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+details[open] {
+    border: 1px solid #39FF14;
+    box-shadow: 0 0 10px rgba(57, 255, 20, 0.2);
+}
+
+summary {
+    color: #39FF14;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none; /* Removes the default arrow in some browsers */
+}
+
+summary::before {
+    content: "> "; /* terminal-style prompt before the text */
+}
+
+details[open] summary {
+    color: #ffffff;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #008F11;
+}
+
+details p {
+    margin: 5px 0 0 20px;
+    font-size: 0.9em;
+}
+
+.refrenceLink {
+    color: #39FF14;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.file{
+    border: 2px solid #39FF14;
+    background: rgba(0, 20, 0, 0.8);
+    padding: 20px;
+    width: fit-content;
+    margin: 20px auto;
+    color:white;
+}
+.warning {
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgba(255, 0, 0, 0.1);
+    padding: 2px 5px;
+}
+
+#trojanContent{
+    flex-wrap: wrap;
+    display: flex;
+    max-width: 600px;
+    justify-content: center;
+    margin:0 auto;
+}
+
+#trojanImg{
+    max-width: 40%;
+    max-height: 30%;
+}
+
+#wormContainer{
+    background-color:#1a1a1a;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(57, 255, 20, 0.4);
+    color: #39FF14;
+}
+
+#logOutput {
+    margin-top: 15px;
+    font-size: 0.8em;
+    height: 100px;
+    overflow: hidden;
+    border-top: 1px solid #008F11;
+    padding-top: 10px;
+    justify-content: start;
+}
