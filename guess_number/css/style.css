@@ -1,0 +1,12 @@
+header{
+    background-color: white;
+}
+#main{
+    background-color: white;
+}
+
+body{
+    background-image: url("https://imgs.search.brave.com/vLHB5CLjF0itpLEqyquOPLROKUOU65Ftqn-V8lvIXOg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMTUv/MjI3LzMzNC9zbWFs/bC9jb2xvcmZ1bC13/b29kZW4tbnVtYmVy/cy1iYWNrZ3JvdW5k/LW51bWJlcnMtdGV4/dHVyZS1hYnN0cmFj/dGlvbi1nbG9iYWwt/ZWNvbm9teS1jcmlz/aXMtY29uY2VwdC1m/aW5hbmNlLWRhdGEt/cGF0dGVybi1waG90/by5KUEc");
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
