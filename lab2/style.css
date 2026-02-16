@@ -2,8 +2,8 @@ body
     {
         /* background-color: rgb(179, 172, 212);
          */
-         background-color: black;
-        background-image: url("/Users/justinandreoli/CST336/JAndreoli04.github.io/lab2/img/matrix-background-binary-code-texture-falling-green-numbers-data-vector-id1312850689.webp");
+         /* background-color: black; */
+        background-image: url("https://imgs.search.brave.com/YR09gwVJP91ebvgqJzH0u5p34nx8s0Of9yclSO_zpI0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0LzI2LzczLzI0/LzM2MF9GXzQyNjcz/MjQ0MF9mTEU1ZDJz/UE5obGZ0ZEN5Zldl/SVpVTHJMbTNoeEZF/Uy5qcGc");
         text-align: center;
         font-family: 'Courier New', Courier, monospace;
 }
@@ -31,10 +31,12 @@ body
 
 h1{
     color:chartreuse;
+    background-color: white;
 }
 #guess{
-    color: white;
+    color: chartreuse;
     font-size: 5vw;
+    background-color: white;
 }
 #hint{
     font-size: 5vw;;
