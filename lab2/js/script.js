@@ -2,7 +2,7 @@ let wins = 0;
 let losses = 0;
 let randomNumber;
 let guessCount = 0;
-
+document.querySelector("#resetBtn").style.display = "none";
 //Event listener
 document.querySelector("#guessButton").addEventListener("click", guess);
 document.querySelector("#resetBtn").addEventListener("click", initializeGame);
