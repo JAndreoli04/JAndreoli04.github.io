@@ -36,12 +36,10 @@ button:hover{
     color:white;
 }
 #dealerHand{
-    padding-top:5em;
-    padding-bottom: 5em;
+    padding-bottom: 2em;
 }
 #userHand{
-    padding-top:5em;
-    padding-bottom: 5em;
+    padding-top:2em;
 }
 #gameControls{
     padding-top: 2em;

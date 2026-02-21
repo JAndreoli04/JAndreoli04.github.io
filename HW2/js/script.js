@@ -24,6 +24,7 @@ function generateDeck(){
     generatedDeck = _.shuffle(generatedDeck);
 }
 function initalizeGame(){
+    document.querySelector("#gameImg").style.display = "none";
     document.querySelector("#restartBtn").style.display = "none";
     document.querySelector("#hitBtn").style.display = "none";
     document.querySelector("#standBtn").style.display = "none";
@@ -72,6 +73,7 @@ function endDelearTurn(){
     if(dealerTotal > 21){
         wins++;
         document.querySelector("#results").textContent = `You win!`;
+        displayWin();
         endGame();
     }else{
         decideWinner();
@@ -85,9 +87,11 @@ function decideWinner(){
     }else if(userTotal>dealerTotal){
         wins++;
         resultOutput.textContent = `You win!`;
+        displayWin();
     }else{
         losses++;
         resultOutput.textContent = `Sorry you lose!`
+        displayLoss();
     }
     endGame();
 }
@@ -103,6 +107,7 @@ function hit(){
     if(userTotal > 21){
         losses++;
         document.querySelector("#results").textContent = `Sorry you lose!`;
+        displayLoss();
         endGame();
     }
 }
@@ -142,14 +147,31 @@ function checkDealForBlackJack(userC1, userC2, dealerC1, dealerC2){
         output.textContent = 'BLACK JACK! You win!';
         userTotal.textContent = `Your total: 21`;
         wins++;
+        displayWin();
         endGame();
         return true;
     }else if(checkBlackJack(dealerC1, dealerC2)){
         output.textContent = "Dealer Black Jack. You lose";
         dealerOutput.textContent = `Dealer cards: ${dealerC1} , ${dealerC2}`;
         losses++;
+        displayLoss();
         endGame();
         return true;
     }
     return false;
+}
+function displayWin(){
+    let img = document.querySelector("#gameImg");
+    img.src = "https://imgs.search.brave.com/k-2n2pKmtxc3H4mksFgBfiBYrC6MUEST6rDoBesFMRg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YTIuZ2lwaHkuY29t/L21lZGlhL3YxLlky/bGtQVGM1TUdJM05q/RXhkMlIwYkRGclpU/SnZlbU53WmprMGRH/eG5iemN5WXpkdFpH/VjRaVEJrTW5WMmNX/ZG9hRGR1TUNabGNE/MTJNVjluYVdaelgz/TmxZWEpqYUNaamRE/MW4vMTJFbzdXb2dD/QW9qODQvZ2lwaHku/Z2lm.gif";
+    img.height = 90;
+    img.width = 90;
+    img.style.display = "inline";
+}
+function displayLoss(){
+    let img = document.querySelector("#gameImg");
+    img.src = "https://imgs.search.brave.com/X8kKQyGmi6zyCQcQY4ZXYl95B6oqsL1aQoq-yMuOui4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS50ZW5vci5jb20v/aTRNcnU1MDZDcndB/QUFBbS9za3lwZS1l/bW9qaS1mYWNlcGFs/bS53ZWJw";
+    img.style.display = "inline";
+    img.width = 50;
+    img.height = 50;
+
 }
