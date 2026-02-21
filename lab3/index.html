@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,56 +8,63 @@
     <script src="js/js.js" defer></script>
     <script src="https://unpkg.com/underscore@1.13.7/underscore-umd-min.js">
     </script>
+    <link href="css/style.css" rel="stylesheet">
 
 </head>
+
 <body>
+    <div id="header">
+        <p id="quizAttempts"></p>
 
-    <h1>CSS Quiz</h1>
+        <h1>CSS Quiz</h1>
+    </div>
+    <div id="questions">
+        <p id="q1Text">1. What color does blue and red make?</p>
+        <br>
 
-    <!-- Radio button question -->
-    <p id="q1Text">1. What color does blue and red make?</p>
-    <br>
-    <!-- <label><input type="radio" name="q1" value="font-color"> font-color </label>
-    <label><input type="radio" name="q1" value="color"> color </label>
-    <label><input type="radio" name="q1" value="text-color"> text-color </label> -->
+        <div id="q1ChoicesDiv">
+        </div>
+        <img id="q1Img">
 
-    <div id="q1ChoicesDiv">
+        <br>
+
+        <!-- Text Box question -->
+        <p id="q2Text">2. How do you spell 'spell'?</p>
+        <input type="text" id="q2Input">
+        <img id="q2Img">
+        <br>
+        <!-- Drop down box question -->
+        <p id="q3Text">3. The sky is blue.</p>
+        <select id="dropdown">
+            <option value="true">True</option>
+            <option value="false">False</option>
+        </select>
+        <img id="q3Img">
+        <br>
+
+        <!-- Number input question -->
+        <p id="q4Text">4. How many edges in a triangle?</p>
+        <input type="number" id="numberInput">
+        <img id="q4Img">
+        <br>
+
+        <p id="q5Text">5. what colors make green?</p>
+        <input type="checkbox" id="chbxorg" value="Orange">Orange
+        <input type="checkbox" id="chbxble" value="Blue">Blue
+        <input type="checkbox" id="chbxyllw" value="Yellow">Yellow
+        <input type="checkbox" id="chbxsun"> Purple
+        <img id="q5Img">
+        <br>
+        <br>
+        <button id="button">Submit Quiz</button>
+
+        <br>
+        <br>
+        <p id="score"></p>
+        <span id="congratMssg"></span>
     </div>
 
-    <br>
-
-    <!-- Text Box question -->
-    <p id="q2Text">2. How do you spell 'spell'?</p>
-    <input type="text" id="q2Input">
-
-    <br>
-    <!-- Drop down box question -->
-    <p id="q3Text">3. Is a duck yellow?</p>
-    <select id="dropdown">
-        <option value="true">True</option>
-        <option value="false">False</option>
-    </select>
-    <br>
-
-    <!-- Number input question -->
-    <p id="q4Text">4. How many edges in a triangle?</p>
-    <input type="number" id="numberInput">
-    <br>
-
-    <p id="q5Text">5. what colors make green?</p>
-    <input type="checkbox" id="chbxorg" value="Orange">Orange
-    <input type="checkbox" id="chbxble" value="Blue">Blue
-    <input type="checkbox" id="chbxyllw" value="Yellow">Yellow
-    <input type="checkbox" id="chbxsun" value="idk"> the color of the sun..
-    
-    <br>
-    <br>
-    <button id="button">Submit Quiz</button>
-
-    <br>
-    <br>
-    <p id="score"></p>
-    
 
 </body>
+
 </html>
